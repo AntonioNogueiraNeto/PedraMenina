@@ -1,0 +1,67 @@
+section{
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.containerPedraMenina {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  display: flex;
+  background-color: rgba(1, 99, 50, 0.705);
+  /* background-color: rgba(139, 30, 10, 0.733); */
+
+}
+
+.logoPedraMenina {
+  width: 15%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.imagemCarregamento {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ou 'contain' para garantir que a imagem se ajuste sem ser cortada */
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .logoPedraMenina {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 1%;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .hero {
+    width: 100%;
+    max-height: 60vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .containerPedraMenina {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+}
