@@ -1,0 +1,39 @@
+/* Exemplo de estilos para o formulário de contato */
+.containerForm h2 {
+  text-align: center;
+}
+form {
+  display: flex;
+
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+button {
+  text-align: center;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
