@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Translate from "./Translate";
 import Logo from "../assets/img/logo-header.png";
 import { Link, NavLink } from "react-router-dom";
 import { ReactComponent as Hamburger } from "../assets/svg/hamburger.svg";
@@ -24,7 +25,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          <Link to="/">
+          <Link to="/ReactApp">
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
@@ -36,13 +37,16 @@ function Navbar() {
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/ReactApp">Home</NavLink>
             </li>
             <li>
               <NavLink to="/empresa">Empresa</NavLink>
             </li>
             <li>
               <NavLink to="/contato">Contato</NavLink>
+            </li>
+            <li>
+              <Translate />
             </li>
           </ul>
         </div>

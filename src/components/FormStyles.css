@@ -1,0 +1,44 @@
+/* FormStyles.css */
+.form-container {
+  display: flex;
+  justify-content: center;
+  height: 49.9vh;
+}
+
+.form-content {
+  width: 50%;
+
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input.textarea {
+  height: 80px;
+  width: 100%;
+  resize: none; /* Disable the resizing of the textarea */
+}
+
+.form-input[type="submit"] {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+/* Add a style for button hover */
+.form-input[type="submit"]:hover {
+  background-color: #0074cc; /* Change the background color to blue on hover */
+  color: white; /* Change the text color to white on hover */
+}

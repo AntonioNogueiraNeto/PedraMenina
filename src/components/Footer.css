@@ -1,0 +1,18 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6BA641; /* Verde escuro */
+  bottom: 0;
+  color: white; /* Cor do texto */
+  text-align: center;
+}
+
+.logoFooter img {
+  display: flex;
+  align-self: center;
+  margin: auto;
+  justify-content: center;
+  width: 200px;
+  align-items: center;
+}

@@ -49,7 +49,7 @@ function Updates() {
               <Link
                 to={`/noticia/${item.titulo.replace(/\s/g, "-")}`}
                 state={{ index }} // Passa o índice como parte do estado
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none", color: "inherit" }}
               >
                 <p className="button-info">VER MAIS</p>
               </Link>

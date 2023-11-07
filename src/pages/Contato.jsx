@@ -1,10 +1,18 @@
 import React from "react";
-import ContactForm from "../components/ContactForm";
+import FormControll from "../components/FormControll";
+import Footer from "../components/Footer";
 function Contato() {
   return (
-    <div>
-      <ContactForm />
-    </div>
+    <>
+      <div
+        className="containerContato"
+        style={{ margin: "auto", textAlign: "center", padding: "20px" }}
+      >
+        <h1>Contato</h1>
+      </div>
+      <FormControll />
+      <Footer />
+    </>
   );
 }
 
