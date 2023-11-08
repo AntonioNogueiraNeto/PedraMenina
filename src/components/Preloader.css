@@ -30,9 +30,13 @@
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  width: 480px;
+  width: 780px;
   font-size: 38px;
   font-weight: 800;
   overflow: hidden;
   color: #fff;
+}
+
+.logoPreloader{
+  width: 20%;
 }

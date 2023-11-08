@@ -8,7 +8,7 @@ const Footer = () => {
         <img src={logo} alt="Logo" />
       </div>
     </footer>
-  );
+  )
 };
 
 export default Footer;

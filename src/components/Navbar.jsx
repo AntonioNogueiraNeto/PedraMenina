@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Translate from "./Translate";
+// import Translate from "./Translate";
 import Logo from "../assets/img/logo-header.png";
 import { Link, NavLink } from "react-router-dom";
 import { ReactComponent as Hamburger } from "../assets/svg/hamburger.svg";
@@ -45,9 +45,9 @@ function Navbar() {
             <li>
               <NavLink to="/contato">Contato</NavLink>
             </li>
-            <li>
+            {/* <li>
               <Translate />
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -71,7 +71,7 @@ function Slider() {
       <div className="containerSlider">
         <div className="tituloUnidade">
           <p>Unidade Pedra Menina</p>
-          <p>Cidade / estado</p>
+          <p>Itamarandiba / MG</p>
 
           <Swiper
             slidesPerView={1}

@@ -28,6 +28,7 @@ export const preLoaderAnim = () => {
       stagger: 0.4,
       ease: "Power3.easeOut",
     })
+    
     .to(".texts-container span", {
       duration: 1,
       y: 70,
@@ -35,6 +36,7 @@ export const preLoaderAnim = () => {
       stagger: 0.2,
       ease: "Power3.easeOut",
     })
+    
 
     .to(".landing", {
       duration: 0.05,
