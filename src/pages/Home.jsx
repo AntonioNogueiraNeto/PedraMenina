@@ -4,6 +4,8 @@ import About from "../components/About";
 import Slider from "../components/Slider";
 import Updates from "../components/Updates";
 import Footer from "../components/Footer";
+import Localizacao from "../components/Localizacao";
+import Call from "../components/Call";
 function Home() {
   return (
     <div>
@@ -12,6 +14,8 @@ function Home() {
       <About />
       <Slider />
       <Updates />
+      <Call />
+      <Localizacao />
       <Footer />
     </div>
   );

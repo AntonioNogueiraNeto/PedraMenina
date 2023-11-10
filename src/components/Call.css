@@ -1,0 +1,46 @@
+.cta-container {
+  background: linear-gradient(rgba(40, 90, 48, 0.9), rgba(40, 90, 78, 0.9)),
+    url("../assets/img/hero/hero.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.bloco-texto {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+
+.cta-texto {
+  color: #fff;
+  font-size: 22px;
+}
+
+.cta-btn-container{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cta-btn-container .cta-btn {
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #072E4A;
+  border: 2px solid #072E4A;
+}
