@@ -11,16 +11,13 @@ function About() {
       </div>
       <div className="paragrafo-hero">
         <p>
-          A Mineração Pedra Menina Ltda. opera, desde 1.992, uma mina a
-          céu-aberto de minério de manganês localizada no nordeste do Estado de
-          Minas Gerais (Vale do Jequitinhonha), no município de Senador
-          Modestino Gonçalves.
-          <br />
-         
-          <br />
-          A mina está localizada no nordeste do Estado de Minas Gerais
-          (Vale do Jequitinhonha), no município de Senador Modestino Gonçalves.
-          A distância rodoviária de Belo Horizonte à mina é de 370 km.
+          Há quase três décadas, a <strong> Mineração Pedra Menina </strong>{" "}
+          estabeleceu sua presença como uma das principais operadoras de
+          mineração na região nordeste do Estado de Minas Gerais. Desde 1992, a
+          empresa opera uma mina a céu aberto dedicada à extração de minério de
+          manganês, situada no coração do deslumbrante{" "}
+          <strong> Vale do Jequitinhonha</strong>, especificamente no município
+          de Senador Modestino Gonçalves.
         </p>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import jazida from "../assets/img/noticia/jazidatitulo.png";
 import cava2 from "../assets/img/cavas/cava2.jpg";
@@ -13,6 +13,18 @@ function Noticia() {
   const tituloDescodificado = decodeURIComponent(titulo);
   const tituloFormatado = tituloDescodificado.replace(/-/g, " "); // Substituir hífens por espaços
 
+  useEffect(() => {
+    // Função para rolar para o topo da página
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // opcional, proporciona uma animação suave de rolagem
+      });
+    };
+
+    // Chama a função quando o componente é montado
+    scrollToTop();
+  }, []); // O segundo argumento vazio [] garante que a função só seja chamada uma vez, quando o componente é montado
   const objetos = [
     {
       index: "0",

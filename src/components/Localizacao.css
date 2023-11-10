@@ -1,11 +1,10 @@
-
-.containerLocalizacao{
-    padding: 20px 0px;
+.containerLocalizacao {
+  padding: 20px 0px;
 }
 .tituloMapa {
-    text-align: center;
-    margin: auto;
-    padding: 30px;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
 }
 
 .tituloMapa span {
@@ -14,12 +13,10 @@
   font-size: 48px;
   font-weight: 800;
   padding: 5px;
-
 }
 .tituloMapa span:last-child {
-    color: #10813b;
-  }
-  
+  color: #10813b;
+}
 
 .mapa {
   display: flex;
@@ -36,7 +33,7 @@
 }
 
 .cardTextoFooter p {
-  padding: 10px 20px 20px 20px ;
+  padding: 10px 20px 20px 20px;
   text-align: justify;
 }
 
@@ -53,6 +50,10 @@
   width: 100%;
 }
 @media screen and (max-width: 480px) {
+.containerLocalizacao .tituloMapa span {
+    font-size: 20px;
+  }
+
   .mapa {
     width: 100%;
     flex-direction: column;
