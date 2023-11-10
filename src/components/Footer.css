@@ -1,18 +1,59 @@
 .footer-container {
-  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6BA641; /* Verde escuro */
+  background-color: #6ba641; /* Verde escuro */
   bottom: 0;
   color: white; /* Cor do texto */
   text-align: center;
 }
 
 .logoFooter img {
-  display: flex;
+  display: block;
   align-self: center;
   margin: auto;
   justify-content: center;
   width: 200px;
   align-items: center;
+}
+
+.mapa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardTextoFooter {
+  width: 300px;
+}
+.fotos-cidade-estado {
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.fotos-cidade-estado img {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.cardTextoFooter p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  color: #fff;
+  padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .mapa {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .mapaGoogle {
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+  }
 }

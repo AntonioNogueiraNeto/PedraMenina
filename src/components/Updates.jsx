@@ -2,25 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Updates.css";
-import cavaImage1 from "../assets/img/cavas/cava.jpg";
+import cavaImage1 from "../assets/img/noticia/jazida.png";
 import cavaImage2 from "../assets/img/cavas/cava2.jpg";
 import cavaImage3 from "../assets/img/cavas/cava3.jpg";
 
 function Updates() {
   const news = [
     {
-      titulo: "Teste Antonio",
+      titulo: "A Jazida mineral",
       imagem: cavaImage1,
     },
 
     {
-      titulo: "Teste Uhlelo",
+      titulo: "A lavra do minério",
       imagem: cavaImage2,
     },
 
     {
       titulo:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Plano de Educação Ambiental - PAE",
       imagem: cavaImage3,
     },
   ];
@@ -45,7 +45,7 @@ function Updates() {
           <div className="card" key={index}>
             <img src={item.imagem} alt={item.image} className="imagemUpdate" />
             <div className="tituloNews">
-              <h2>{limitarTexto(item.titulo, 3)}</h2>
+              <h2>{limitarTexto(item.titulo, 8)}</h2>
               <Link
                 to={`/noticia/${item.titulo.replace(/\s/g, "-")}`}
                 state={{ index }} // Passa o índice como parte do estado
