@@ -1,9 +1,9 @@
-.footer-container {
+/* .footer-container {
   align-items: center;
   justify-content: center;
-  background-color: #6ba641; /* Verde escuro */
+  background-color: #6ba641;  Verde escuro 
   bottom: 0;
-  color: white; /* Cor do texto */
+  color: white;  Cor do texto 
   text-align: center;
 }
 
@@ -55,5 +55,88 @@
     margin: auto;
     justify-content: center;
     width: 100%;
+  }
+} */
+
+
+
+.footer-container {
+  align-items: center;
+  justify-content: center;
+  background-color: #6ba641; /* Verde escuro */
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  color: white; /* Cor do texto */
+  text-align: center;
+}
+
+.logoFooter img {
+  display: block;
+  align-self: center;
+  margin: auto;
+  justify-content: center;
+  width: 200px;
+  align-items: center;
+}
+
+.mapa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  overflow: hidden;
+}
+
+.div-esquerda {
+  width: 50%;
+  padding: 20px;
+}
+
+.cardTextoFooter {
+  text-align: justify;
+}
+
+.fotos-cidade-estado {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.fotos-cidade-estado img {
+  width: 290px;
+}
+@media screen and (max-width: 480px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .mapa {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .div-esquerda {
+    width: 100%;
+  }
+  .fotos-cidade-estado {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .cardTextoFooter {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+  }
+
+  .mapaGoogle{
+    width: 90%;
+    margin-bottom: 20px;
+    overflow: hidden;
   }
 }
