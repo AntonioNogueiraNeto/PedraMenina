@@ -1,0 +1,31 @@
+.subtexto-curso p{
+    text-align: center;
+}
+
+.lado-a-lado-curso{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.texto-lado-curso{
+    width: 80%;
+    text-align: justify;
+    align-items: center;
+
+}
+
+.img-container-curso-direito{
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-lado-curso-direito p{
+    text-align: justify;
+}
+
+

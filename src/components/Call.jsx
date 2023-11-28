@@ -11,8 +11,8 @@ function Call() {
         </p>
 
         <div className="cta-btn-container">
-          <Link to={"/contato"} className="cta-btn">
-            Entre em contato
+          <Link to={"/produtos"} className="cta-btn">
+            Confira Mais
           </Link>
         </div>
       </div>

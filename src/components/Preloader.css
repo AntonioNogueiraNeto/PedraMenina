@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
   background-size: contain; /* Adjust the background size to fit within the container */
   background-position: center; /* Center the background image */
-  background-blend-mode: overlay;
+  background-blend-mode: darken;
   margin: auto;
 
-  background-color: #070707;
+  background-color: #11301d;
   color: #fff;
   position: fixed;
   bottom: 0;
@@ -28,7 +28,8 @@
 .preloader .texts-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   height: 60px;
   width: 780px;
   font-size: 38px;
@@ -37,6 +38,6 @@
   color: #fff;
 }
 
-.logoPreloader{
-  width: 20%;
+.textoCimaPreLoader{
+ color: #012B4A; /* Will override color (regardless of order) */
 }

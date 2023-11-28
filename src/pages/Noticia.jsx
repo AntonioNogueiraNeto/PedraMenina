@@ -5,6 +5,7 @@ import cava2 from "../assets/img/cavas/cava2.jpg";
 
 import "./Noticia.css";
 import Footer from "../components/Footer";
+import Cursos from "../components/Cursos";
 function Noticia() {
   const location = useLocation();
   const { state } = location;
@@ -18,7 +19,7 @@ function Noticia() {
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth', // opcional, proporciona uma animação suave de rolagem
+        behavior: "smooth", // opcional, proporciona uma animação suave de rolagem
       });
     };
 
@@ -86,24 +87,48 @@ function Noticia() {
       {index !== null ? (
         <div>
           {objetoSelecionado ? (
-            <div className="ContainerNoticia">
-              <div className="tituloNoticia">
-                <span>{tituloFormatado}</span>
-              </div>
-              <div className="container-texto-noticia">
-                <div className="container-imagem">
-                  <img src={objetoSelecionado.imagem} alt="teste" />
+            <>
+              <div className="ContainerNoticia">
+                <div className="tituloNoticia">
+                  <span>{tituloFormatado}</span>
                 </div>
-                <div className="texto">
+                <div className="container-texto-noticia">
+                  <div className="container-imagem">
+                    {index === 0 || index === 1 ? (
+                      <>
+                        <div className="container-imagem">
+                          <img
+                            src={objetoSelecionado.imagem}
+                            style={{
+                              width: "60%",
+                            }}
+                            className="jazida-foto"
+                            alt="teste"
+                          />
+                        </div>
+                        <div className="texto">
+                          <p>{objetoSelecionado.texto1}</p>
+                          <p>{objetoSelecionado.texto2}</p>
+                          <p>{objetoSelecionado.texto3}</p>
+                          <p>{objetoSelecionado.texto4}</p>
+                          <p>{objetoSelecionado.texto5}</p>
+                        </div>
+                      </>
+                    ) : (
+                      <Cursos />
+                    )}
+                  </div>
+                  {/* <div className="texto">
                   <p>{objetoSelecionado.texto1}</p>
                   <p>{objetoSelecionado.texto2}</p>
                   <p>{objetoSelecionado.texto3}</p>
                   <p>{objetoSelecionado.texto4}</p>
                   <p>{objetoSelecionado.texto5}</p>
+                </div> */}
                 </div>
+                {/* Adicione mais informações conforme necessário */}
               </div>
-              {/* Adicione mais informações conforme necessário */}
-            </div>
+            </>
           ) : (
             <p>Detalhes do objeto não encontrados.</p>
           )}

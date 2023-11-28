@@ -6,6 +6,7 @@ import Empresa from "./pages/Empresa";
 import Contato from "./pages/Contato";
 import Navbar from "./components/Navbar";
 import Noticia from "./pages/Noticia";
+import Produtos from "./pages/Produtos";
  // importação do swiper como pedido na documentação
 import { register } from "swiper/element/bundle";
 
@@ -27,6 +28,8 @@ function App() {
         <Route path="/noticia/:titulo" element={<Noticia />} />
         <Route path="/empresa" element={<Empresa />} />
         <Route path="/contato" element={<Contato />} />
+        <Route path="/produtos" element={<Produtos />} />
+
         <Route path="/ReactApp" element={<Home />} />
       </Routes>
     </Router>

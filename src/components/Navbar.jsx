@@ -43,6 +43,9 @@ function Navbar() {
               <NavLink to="/empresa">Empresa</NavLink>
             </li>
             <li>
+              <NavLink to="/produtos">Produtos</NavLink>
+            </li>
+            <li>
               <NavLink to="/contato">Contato</NavLink>
             </li>
             {/* <li>

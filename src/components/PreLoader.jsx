@@ -9,14 +9,17 @@ function PreLoader() {
   return (
     <div className="overlayPreloader">
       <div className="preloader">
-        <div className="texts-container">
-          <span>Mineração</span>
-          <span>Pedra</span>
-          <span>Menina</span>
-          {/* <span>
-            <img src={logo} className="logoPreloader" alt="" />
-          </span>
-             */}
+        <div className="centralizar">
+          <div className="texts-container">
+            <span
+            >
+              Mineração
+            </span>
+          </div>
+          <div className="texts-container">
+            <span>Pedra</span>
+            <span>Menina</span>
+          </div>
         </div>
       </div>
     </div>
