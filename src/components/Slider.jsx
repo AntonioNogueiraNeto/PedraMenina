@@ -8,7 +8,6 @@ import cavaImage5 from "../assets/img/cavas/visaoGeral2.jpg";
 import cavaImage6 from "../assets/img/cavas/visaoArea.jpg";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
-
 import "./Slider.css";
 
 function Slider() {

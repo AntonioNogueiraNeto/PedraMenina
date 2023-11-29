@@ -88,46 +88,44 @@ function Noticia() {
         <div>
           {objetoSelecionado ? (
             <>
-              <div className="ContainerNoticia">
-                <div className="tituloNoticia">
-                  <span>{tituloFormatado}</span>
-                </div>
-                <div className="container-texto-noticia">
-                  <div className="container-imagem">
-                    {index === 0 || index === 1 ? (
-                      <>
-                        <div className="container-imagem">
-                          <img
-                            src={objetoSelecionado.imagem}
-                            style={{
-                              width: "60%",
-                            }}
-                            className="jazida-foto"
-                            alt="teste"
-                          />
-                        </div>
-                        <div className="texto">
-                          <p>{objetoSelecionado.texto1}</p>
-                          <p>{objetoSelecionado.texto2}</p>
-                          <p>{objetoSelecionado.texto3}</p>
-                          <p>{objetoSelecionado.texto4}</p>
-                          <p>{objetoSelecionado.texto5}</p>
-                        </div>
-                      </>
-                    ) : (
-                      <Cursos />
-                    )}
+              {index === 0 || index === 1 ? (
+                <div className="ContainerNoticia">
+                  <div className="tituloNoticia">
+                    <span>{tituloFormatado}</span>
                   </div>
-                  {/* <div className="texto">
+                  <div className="container-texto-noticia">
+                    <div className="container-imagem">
+                      <div className="container-imagem">
+                        <img
+                          src={objetoSelecionado.imagem}
+                          style={{
+                            width: "60%",
+                          }}
+                          className="jazida-foto"
+                          alt="teste"
+                        />
+                      </div>
+                      <div className="texto">
+                        <p>{objetoSelecionado.texto1}</p>
+                        <p>{objetoSelecionado.texto2}</p>
+                        <p>{objetoSelecionado.texto3}</p>
+                        <p>{objetoSelecionado.texto4}</p>
+                        <p>{objetoSelecionado.texto5}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Cursos />
+              )}
+              {/* <div className="texto">
                   <p>{objetoSelecionado.texto1}</p>
                   <p>{objetoSelecionado.texto2}</p>
                   <p>{objetoSelecionado.texto3}</p>
                   <p>{objetoSelecionado.texto4}</p>
                   <p>{objetoSelecionado.texto5}</p>
                 </div> */}
-                </div>
-                {/* Adicione mais informações conforme necessário */}
-              </div>
+              {/* Adicione mais informações conforme necessário */}
             </>
           ) : (
             <p>Detalhes do objeto não encontrados.</p>

@@ -28,4 +28,13 @@
     text-align: justify;
 }
 
+.textoCursos {
+    background-color: white;
+    font-family: "roboto", sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
 
+}
