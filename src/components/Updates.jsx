@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Updates.css";
 import cavaImage1 from "../assets/img/noticia/jazida.png";
 import cavaImage2 from "../assets/img/cavas/cava2.jpg";
-import cavaImage3 from "../assets/img/cavas/cava3.jpg";
+import cavaImage3 from "../assets/img/Cursos/projeto1.jpg";
 
 function Updates() {
   const news = [
